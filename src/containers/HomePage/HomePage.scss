@@ -1,0 +1,145 @@
+.section-share {
+    &.section-spec {
+        background: rgb(120, 237, 232);
+    }
+
+    height: 330px;
+    border: 1px solid orchid;
+
+    .section-content {
+        margin: 0 100px;
+        display: flex;
+        flex-direction: column;
+
+        .section-header {
+            height: 50px;
+            margin-bottom: 8px;
+            padding-top: 15px;
+        }
+
+        .title-section {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .btn-section {
+            float: right;
+            padding: 5px 10px;
+            border: none;
+            outline: none;
+            display: block;
+            background: #fff;
+            color: black;
+            cursor: pointer;
+
+            &:hover {
+                background: greenyellow !important;
+            }
+        }
+
+        .section-body {
+            .section-custom {
+                .bg-img {
+                    display: flex;
+                    height: 250px;
+                    width: 225px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-color: #eee;
+                    background-size: cover;
+                    margin: 0 auto;
+
+                    &.section-spec {
+                        background-image: url('../../assets/spec/sila.svg');
+                    }
+
+                    &.section-doctor {
+                        background-image: url('../../assets/doctor/anh123.jpg');
+                    }
+
+                    &.section-hanbook {
+                        background-image: url('../../assets/handbook/handbook.jpg');
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            .slick-prev {
+                border: 2px solid greenyellow !important;
+                left: -10px !important;
+                z-index: 1000 !important;
+                height: 48px !important;
+                width: 44px !important;
+                background: #fff !important;
+
+                &:hover {
+                    background: greenyellow !important;
+                }
+            }
+
+            .slick-prev:before,
+            .slick-next:before {
+                position: relative !important;
+                font-family: "FontAwesome" !important;
+                position: absolute;
+                color: red !important;
+            }
+
+            .slick-next {
+                border: 2px solid greenyellow !important;
+                right: -10px !important;
+                z-index: 1000 !important;
+                height: 48px !important;
+                width: 44px !important;
+                background: #fff !important;
+
+                &:hover {
+                    background: greenyellow !important;
+                }
+            }
+        }
+
+    }
+}
+
+.home-footer {
+    text-align: center;
+    padding-top: 8px;
+
+    a {
+        text-decoration: unset;
+    }
+
+}
+
+.section-about {
+    height: 500px !important;
+    padding: 0 100px;
+    border-top: 1px solid fuchsia;
+    border-bottom: 1px solid salmon;
+
+    .section-about-header {
+        padding: 20px 10px;
+        font-size: 20px;
+        font-weight: 600;
+
+        .section-about-content {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+
+            .content-left {
+                width: 70%;
+            }
+
+            .content-right {
+                width: 30%;
+
+                // p {
+                //     text-align: justify;
+                //     font-style: italic;
+                // }
+            }
+        }
+    }
+}
